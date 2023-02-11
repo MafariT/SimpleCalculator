@@ -10,7 +10,7 @@ double userEnteredValue()
 
 char userEnteredOperation()
 {
-	std::cout << "Enter an operator '+'-'/'* or 'q' to quit \n";
+	std::cout << "Enter an operator '+'-'/'*' or 'q' to quit \n";
 	char operationEntered{};
 	std::cin >> operationEntered;
 	return operationEntered;
