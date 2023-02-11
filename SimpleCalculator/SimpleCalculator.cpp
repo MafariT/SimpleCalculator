@@ -2,7 +2,7 @@
 
 double userEnteredValue()
 {
-	std::cout << "enter a number: \n";
+	std::cout << "Enter a number: \n";
 	double numEntered{};
 	std::cin >> numEntered;
 	return numEntered;
@@ -10,7 +10,7 @@ double userEnteredValue()
 
 char userEnteredOperation()
 {
-	std::cout << "Enter an operator '+'-'/'* or 'q' to quit \n";
+	std::cout << "Enter an operator '+'-'/'*' or 'q' to quit \n";
 	char operationEntered{};
 	std::cin >> operationEntered;
 	return operationEntered;
@@ -34,22 +34,18 @@ int main()
 		if (opera == '+')
 		{
 			std::cout << x << " + " << y << " = " << x + y << '\n';
-			isCalculatingDone = false;
 		}
 		else if (opera == '-')
 		{
 			std::cout << x << " - " << y << " = " << x - y << '\n';
-			isCalculatingDone = false;
 		}
 		else if (opera == '*')
 		{
 			std::cout << x << " * " << y << " = " << x * y << '\n';
-			isCalculatingDone = false;
 		}
 		else if (opera == '/')
 		{
 			std::cout << x << " / " << y << " = " << x / y << '\n';
-			isCalculatingDone = false;
 		}
 		else
 		{
