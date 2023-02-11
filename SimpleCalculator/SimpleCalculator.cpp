@@ -2,7 +2,7 @@
 
 double userEnteredValue()
 {
-	std::cout << "enter a number: \n";
+	std::cout << "Enter a number: \n";
 	double numEntered{};
 	std::cin >> numEntered;
 	return numEntered;
