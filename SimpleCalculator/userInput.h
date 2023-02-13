@@ -2,7 +2,7 @@
 class userInput
 {
 	public:
-	double userEnteredValue();
+	double userEnteredNums();
 	char userEnteredOperator();
 	int calc();
 };

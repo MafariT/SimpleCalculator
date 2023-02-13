@@ -5,6 +5,7 @@ int main()
 {
 	userInput input;
 	bool isCalculatingDone{ false };
+
 	while (!isCalculatingDone)
 	{
 		char opera{ input.userEnteredOperator() };
@@ -15,8 +16,8 @@ int main()
 			break;
 		}
 
-		double x{ input.userEnteredValue() };
-		double y{ input.userEnteredValue() };
+		double x{ input.userEnteredNums() };
+		double y{ input.userEnteredNums() };
 		if (opera == '+')
 		{
 			std::cout << x << " + " << y << " = " << x + y << '\n';

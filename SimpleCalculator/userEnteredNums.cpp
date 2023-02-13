@@ -1,7 +1,7 @@
 #include <iostream>
 #include "userInput.h"
 
-double userInput::userEnteredValue()
+double userInput::userEnteredNums()
 {
 	std::cout << "Enter a number: \n";
 	double numEntered{};
