@@ -1,27 +1,13 @@
 #include <iostream>
-
-double userEnteredValue()
-{
-	std::cout << "Enter a number: \n";
-	double numEntered{};
-	std::cin >> numEntered;
-	return numEntered;
-}
-
-char userEnteredOperation()
-{
-	std::cout << "Enter an operator '+'-'/'*' or 'q' to quit \n";
-	char operationEntered{};
-	std::cin >> operationEntered;
-	return operationEntered;
-}
+#include "userInput.h"
 
 int main()
 {
+	userInput input;
 	bool isCalculatingDone{ false };
 	while (!isCalculatingDone)
 	{
-		char opera{ userEnteredOperation() };
+		char opera{ input.userEnteredOperator() };
 
 		if (opera == 'q')
 		{
@@ -29,8 +15,8 @@ int main()
 			break;
 		}
 
-		double x{ userEnteredValue() };
-		double y{ userEnteredValue() };
+		double x{ input.userEnteredValue() };
+		double y{ input.userEnteredValue() };
 		if (opera == '+')
 		{
 			std::cout << x << " + " << y << " = " << x + y << '\n';
